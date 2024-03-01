@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #faf8ed;
+    margin: 0;
+    overflow: hidden;
+    padding: 24px 128px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}

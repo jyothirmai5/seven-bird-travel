@@ -1,1 +1,26 @@
-<p>header works!</p>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Seven bird travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/dashboard/home']">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/dashboard/trip-details">My Trip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/dashboard/about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/dashboard/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn my-2 my-sm-0 login-btn" routerLink="/auth/login" type="button">Login</button>
+    </nav>
+</div>
