@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Constants } from '../../../constants';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  resourceSections = Constants.footerContent;
 }

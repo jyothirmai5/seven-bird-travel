@@ -4,9 +4,26 @@ body {
     margin: 0;
     overflow: hidden;
     padding: 24px 128px;
+    font-family: Inter;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2d3134;
 }
 
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
 }
