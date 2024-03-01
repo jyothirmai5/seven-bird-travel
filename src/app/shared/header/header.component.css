@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn {
+    width: 140px;
+    height: 45px;
+    flex-grow: 0;
+    margin: 0 0 0 192px;
+    border-radius: 50px;
+    border: solid 1px #f66f4d;
+    color: #f66f4d;
+    background-color: #faf8ed;
+}
