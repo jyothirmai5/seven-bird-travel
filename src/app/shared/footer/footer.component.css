@@ -1,0 +1,28 @@
+footer {
+    margin: 46px 0 0;
+}
+
+.column-container {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    margin: 5px;
+}
+
+.section-heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section-item {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #676a6c;
+}

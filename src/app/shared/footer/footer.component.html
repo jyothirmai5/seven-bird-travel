@@ -1,1 +1,12 @@
-<p>footer works!</p>
+<footer class="flex-between">
+    <div class="column">
+        <span class="logo-text">Seven bird travel</span>
+        <p class="section-item">Enjoy the planning with seven bird travel</p>
+    </div>
+    <div class="column-container">
+        <div *ngFor="let section of resourceSections" class="column">
+            <p class="section-heading">{{ section.heading }}</p>
+            <p class="section-item" *ngFor="let item of section.items">{{ item }}</p>
+        </div>
+    </div>
+</footer>
