@@ -20,6 +20,21 @@ body {
     width: 100%;
 }
 
+.You-do-not-have-an-account-Join-Now {
+    width: 375px;
+    height: 25px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 15.6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .You-do-not-have-an-account-Join-Now .text-style-1 {
     color: #6f6c90;
 }
