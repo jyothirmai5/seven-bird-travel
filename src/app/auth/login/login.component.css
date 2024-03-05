@@ -70,7 +70,7 @@ body {
     /* Change background-size */
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../assets/rectangle-2415-bg.png');
+    background-image: url('src/app/auth/login/assets/rectangle-2415-bg.png');
     flex-shrink: 0;
 }
 
