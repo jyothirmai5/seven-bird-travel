@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MapboxService } from '../map.service';
 
 @Component({
   selector: 'app-trip-details',
-  standalone: true,
-  imports: [],
   templateUrl: './trip-details.component.html',
   styleUrl: './trip-details.component.css'
 })
-export class TripDetailsComponent {
+export class TripDetailsComponent implements OnInit {
+  constructor(private mapService: MapboxService) {
 
+  }
+  ngOnInit(): void {
+
+  }
 }
