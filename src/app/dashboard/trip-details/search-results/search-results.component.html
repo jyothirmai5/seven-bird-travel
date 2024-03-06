@@ -1,1 +1,11 @@
-<p>search-results works!</p>
+<div>
+    <ng-select [multiple]="true" [(ngModel)]="selectedCategories" (ngModelChange)="onSelectedCategoriesChange()">
+        <ng-option *ngFor="let category of categories" [value]="category.canonical_id">{{category.name}}</ng-option>
+    </ng-select>
+    <p class="search-text">Search Results</p>
+    <div>
+        <div class="each-search-result-card">
+          
+        </div>
+    </div>
+</div>

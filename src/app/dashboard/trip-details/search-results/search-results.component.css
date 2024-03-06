@@ -1,0 +1,18 @@
+.search-text {
+    margin: 0 933px 40px 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.28;
+    text-align: left;
+    color: #121212;
+  }
+
+  .each-search-result-card {
+    width: 1073px;
+    height: 243px;
+    flex-grow: 0;
+    margin: 0 0 44px;
+    object-fit: contain;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
