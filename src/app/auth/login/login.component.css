@@ -1,30 +1,159 @@
-html {
-    font-size: 62.5%;
-}
-
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-color: #f2f2f2;
+    position: relative;
 }
 
-ul,
-li {
-    list-style: none;
+ .container {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+ }
+
+
+ .left{
+flex: 1;
+width: 374.8px;
+ }
+
+.form h2 {
+    text-align: left;
+    font-weight: bolder;
+    /* Align the form title text to the left */
+    margin-bottom: 30px;
+    /* Add some space below the title */
 }
 
-input {
-    border: none;
+.label {
+    display: inline-block;
+    width: 374.8px;
+     /* Adjust the width as needed */
+    text-align: left;
+    font-weight: bold;
 }
 
-body {
+.form input[type="text"],
+.form input[type="password"],
+.form button {
+    width: 100%;
+    /* Make the input fields and button full-width */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+    margin-bottom: 15px;
+    /* Add some space between input fields and button */
+}
+
+.span {
+    display: block;
+    /* Make the span element a block-level element */
+    text-align: left;
+    /* Align the text within the span to the left */
+    margin-bottom: 30px;
+    /* Add some space below the span */
+    font-style: italic;
+    /* Make the text italic */
+    color: #888;
+    /* Change the color of the text */
+}
+
+
+.form {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+width: 374.8px;
+text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8.3px;
     width: 100%;
 }
 
-.You-do-not-have-an-account-Join-Now {
-    width: 375px;
-    height: 25px;
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: #515151;
+    cursor: pointer;
+    border-radius: 8.3px;
+    color: #ffffff;
+    background-color: #f66f4d;
+    width: 374.8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.or-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.social-buttons {
+    width: 374.8px;
+    height: 182.5px;
     flex-grow: 0;
-    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    text-align: center;
+    
+}
+.icon {
+    width: 20px;
+    /* Adjust this value to make the icons smaller */
+    height: 20px;
+    /* Adjust this value to make the icons smaller */
+}
+.social-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-block;
+        /* Display buttons in a line */
+        vertical-align: middle;
+        /* Align buttons vertically in the middle */
+        margin: 10px;
+        /* Add some margin around the buttons */
+    border: 1px solid #ccc;
+    border-radius: 8.3px;
+    }
+
+
+.icon {
+    width: 20px;
+    /* Adjust this value to make the icons smaller */
+    height: 20px;
+    /* Adjust this value to make the icons smaller */
+    margin-right: 5px;
+    /* Add right margin from the text */
+}
+
+.You-do-not-have-an-account-Join-Now {
     font-size: 15.6px;
     font-weight: normal;
     font-stretch: normal;
@@ -33,408 +162,15 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
 }
 
 .You-do-not-have-an-account-Join-Now .text-style-1 {
     color: #6f6c90;
+    margin-top: 30px;
 }
 
 .You-do-not-have-an-account-Join-Now .text-style-2 {
-    color: #3434f1;
-}
-
-.login-JRU {
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    position: relative;
-    background-color: #faf8ed;
-}
-
-.login-JRU .group-37289-WGe {
-    box-sizing: border-box;
-    padding-right: 18.3469rem;
-    width: 100%;
-    height: 124.1421rem;
-    display: flex;
-    align-items: flex-end;
-    background-color: #ffffff;
-}
-
-.login-JRU .group-37289-WGe .rectangle-2415-NiA {
-    margin: 0rem 19.033rem 0.024rem 0rem;
-    width: 107.9197rem;
-    height: 124.1184rem;
-    background-color: #eff0f7;
-    background-size: cover;
-    /* Change background-size */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('src/app/auth/login/assets/rectangle-2415-bg.png');
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz {
-    margin-bottom: 4.4947rem;
-    width: 52.7rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .group-35607-iQe {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .group-35607-iQe .register-fqg {
-    margin: 0rem 0rem 1.718rem 0.209rem;
-    font-size: 4.7149rem;
-    font-weight: 700;
-    line-height: 1.352941167;
-    color: #170f49;
-    font-family: Sen, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .group-35607-iQe .lorem-ipsum-dolor-sit-ame-consectetur-emet-9kr {
-    font-size: 2.4961rem;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    color: #6e6b8f;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv {
-    box-sizing: border-box;
-    padding-top: 4.1602rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 {
-    margin-bottom: 4.1602rem;
-    width: 51.9685rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr {
-    margin-bottom: 1.6641rem;
-    width: 100%;
-    height: 21.6229rem;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g {
-    width: 51.9685rem;
-    height: 12.9711rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG {
-    width: 100%;
-    height: 10.1533rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG .label-Hg2 {
-    margin-bottom: 1.7661rem;
-    font-size: 1.9414rem;
-    font-weight: 500;
-    line-height: 1.4285714286;
-    color: #020246;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG .input-Pj4 {
-    box-sizing: border-box;
-    padding: 1.444rem 2.021rem 1.75rem 2.021rem;
-    width: 100%;
-    height: 6.3871rem;
-    overflow: hidden;
-    position: relative;
-    border: solid 0.2773rem #eff0f7;
-    box-shadow: 0.8rem 0.8rem 2.4rem rgba(2, 2, 70, 0.0500000007);
-    background-color: #ffffff;
-    border-radius: 1.1549rem;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG .input-Pj4 .content-uhQ {
-    box-sizing: border-box;
-    padding-left: 0.2406rem;
-    width: 24.442rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG .input-Pj4 .content-uhQ .mail-3Yi {
-    margin: 0.306rem 1.395rem 0rem 0rem;
-    width: 2.406rem;
-    height: 1.9248rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-field-base-d5g .input-with-label-wMG .input-Pj4 .content-uhQ .text-we6 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-with-label-nPp {
-    width: 51.9685rem;
-    height: 9.8055rem;
-    position: absolute;
-    left: 0;
-    top: 11.8174rem;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-with-label-nPp .label-KPk {
-    margin-bottom: 0.832rem;
-    font-size: 1.9414rem;
-    font-weight: 500;
-    line-height: 1.4285714145;
-    color: #344053;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-with-label-nPp .input-rPg {
-    box-sizing: border-box;
-    padding: 1.387rem 1.941rem 1.387rem 1.941rem;
-    width: 100%;
-    height: 6.1735rem;
-    overflow: hidden;
-    position: relative;
-    border: solid 0.1387rem #cfd4dc;
-    box-shadow: 0 0.1387rem 0.2773rem rgba(16, 24, 40, 0.0500000007);
-    background-color: #ffffff;
-    border-radius: 1.1094rem;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .auto-group-ytlj-KYr .input-with-label-nPp .input-rPg .content-b6N {
-    margin-right: 38.0857rem;
-    width: 10rem;
-    height: 100%;
-    font-size: 2.2188rem;
-    font-weight: 400;
-    line-height: 1.499999914;
-    color: #667084;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .primary-button-Rr6 {
-    margin-bottom: 1.6641rem;
-    width: 100%;
-    height: 6.3871rem;
-    border-radius: 1.1549rem;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .primary-button-Rr6 .button-base-xr2 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #ffffff;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f66f4d;
-    border-radius: 1.1549rem;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .header-cta-b74 .forgot-password-dxA {
-    margin-right: 0rem;
-    text-align: center;
-    font-size: 2.1654rem;
-    font-weight: 400;
-    line-height: 1.5999998943;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .divider-L5t {
-    margin-bottom: 4.1602rem;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .divider-L5t .line-127-ra2 {
-    margin: 0.143rem 3.588rem 0rem 0rem;
-    width: 20.7416rem;
-    height: 0.1444rem;
-    background-color: #eff0f6;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .divider-L5t .or-A4v {
-    margin-right: 3.8497rem;
-    text-align: center;
-    font-size: 2.3097rem;
-    font-weight: 400;
-    line-height: 1.1249999277;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .divider-L5t .line-128-gZ4 {
-    margin-top: 0.1427rem;
-    width: 20.7416rem;
-    height: 0.1444rem;
-    background-color: #eff0f6;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U {
-    box-sizing: border-box;
-    padding-bottom: 8.8787rem;
-    width: 51.9685rem;
-    row-gap: 1.6641rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Krv {
-    box-sizing: border-box;
-    padding: 1.444rem 9.286rem 1.911rem 15.12rem;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: solid 0.2773rem #eff0f7;
-    box-shadow: 0.8rem 0.8rem 2.4rem rgba(2, 2, 70, 0.0500000007);
-    background-color: #ffffff;
-    border-radius: 1.1549rem;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Krv .social-icon-TTL {
-    margin: 0.468rem 1.766rem 0rem 0rem;
-    width: 3.3961rem;
-    height: 3.4647rem;
-    position: relative;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Krv .text-myp {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    color: #020246;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Fe6 {
-    box-sizing: border-box;
-    padding: 1.444rem 10.636rem 1.911rem 14.436rem;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: solid 0.2773rem #eff0f7;
-    box-shadow: 0.8rem 0.8rem 2.4rem rgba(2, 2, 70, 0.0500000007);
-    background-color: #ffffff;
-    border-radius: 1.1549rem;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Fe6 .social-icon-PEW {
-    margin: 0.468rem 1.732rem 0rem 0rem;
-    width: 3.4646rem;
-    height: 3.4646rem;
-    position: relative;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-Fe6 .text-4bY {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    color: #020246;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-XEE {
-    box-sizing: border-box;
-    padding: 1.444rem 11.636rem 2.2rem 15.326rem;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: solid 0.2773rem #eff0f7;
-    box-shadow: 0.8rem 0.8rem 2.4rem rgba(2, 2, 70, 0.0500000007);
-    background-color: #ffffff;
-    border-radius: 1.1549rem;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-XEE .social-icon-epe {
-    margin: 0.468rem 2.132rem 0rem 0rem;
-    width: 2.6751rem;
-    height: 3.1759rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
-}
-
-.login-JRU .group-37289-WGe .frame-35623-nWz .auto-group-qc9u-4cv .social-button-groups-p9U .social-button-XEE .text-BZg {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.6666666667;
-    color: #020246;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
+    color: #2222ff;
+    margin-top: 30px;
 }
