@@ -1,0 +1,60 @@
+body.about-body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+}
+
+.about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      /* Add space around the entire section */
+}
+
+.text-container {
+      width: 45%;
+      padding: 20px;
+      box-sizing: border-box;
+}
+
+.image-container {
+      width: 50%;
+}
+
+img {
+      width: 100%;
+      height: auto;
+}
+
+h2 {
+      font-size: 24px;
+      color: #333;
+      /* Change the color as needed */
+}
+
+p {
+      font-size: 16px;
+      color: #666;
+      /* Change the color as needed */
+      line-height: 1.5;
+      margin-bottom: 15px;
+      /* Add space between paragraphs */
+}
+
+.contact-button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #F66F4D;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+      /* Add a smooth transition on hover */
+}
+
+.contact-button:hover {
+      background-color: #FF8C66;
+      /* Change the hover color as needed */
+}
