@@ -8,6 +8,7 @@ body {
     overflow: auto;
     padding: 24px 128px;
     font-family: Inter;
+    background: #faf8ed;
 }
 
 .logo-text {
