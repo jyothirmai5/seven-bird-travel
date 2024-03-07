@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="container">
+    <div class="left">
+        <img class="image" src="../../../assets/background.png" alt="">
+    </div>
+
+    <div class="form">
+        <form method="post">
+            <h2>Login</h2>
+            <span class="span">
+                Please login to explore your trip!
+            </span>
+            <label class="label"> E-mail </label>
+            <input type="text" name="email" placeholder="Email" required>
+            <label class="label"> Password </label>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="button" (click)="onLogin()">Login</button>
+        </form>
+        <div class="or-text">
+            <hr>
+            <p>or</p>
+        </div>
+        <div class="social-buttons">
+            <button><img class="icon" src="../../../assets/Google.png" alt="Google Logo">Login with Google</button>
+            <button><img class="icon" src="../../../assets/facebook-icon.png" alt="Facebook Logo">Login with
+                Facebook</button>
+            <button><img class="icon" src="../../../assets/Apple-icon.png" alt="Apple Logo">Login with Apple ID</button>
+        </div>
+        <span class="You-do-not-have-an-account-Join-Now">
+            You do not have an account?
+            <span class="text-style-1"></span>
+            <span class="text-style-2" (click)="navigateToRegister()">Join Now</span>
+        </span>
+    </div>
+</div>

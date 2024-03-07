@@ -1,1 +1,34 @@
-<p>contact-form works!</p>
+<div class="container-div">
+    <div class="title">
+        <h1 class="main-title">Say hello</h1>
+        <p class="description">We're here to help. Please fill out the form below and we'll get back to you as soon as
+            possible.</p>
+        <hr>
+    </div>
+    <div class="forms">
+        <div class="form1">
+            <div class="form-group1">
+                <label for="name">First name</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group1">
+                <label for="name">Last name</label>
+                <input type="text" id="name" name="name">
+            </div>
+        </div>
+
+        <div class="form2">
+            <div class="form-group2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group2">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+        </div>
+        <button class="submit-btn" (click)="navigateToDashboard()">Submit</button>
+    </div>
+
+</div>

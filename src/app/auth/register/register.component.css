@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+}
+
+.image {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.form {
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 375px;
+    /* Rounded to 375px */
+    text-align: center;
+}
+
+.form h2 {
+    text-align: left;
+    font-weight: bold;
+    /* Changed from bolder */
+    margin-bottom: 30px;
+}
+
+.label {
+    display: inline-block;
+    width: 375px;
+    /* Adjusted width */
+    text-align: left;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.span {
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #888;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8.3px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #f66f4d;
+    width: 375px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.or-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.social-buttons {
+    width: 375px;
+    /* Rounded to 375px */
+    height: 182.5px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    text-align: center;
+}
+
+.social-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8.3px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.You-do-not-have-an-account-Join-Now {
+    font-size: 15.6px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+/* Adjusted class names */
+.You-do-not-have-an-account-Join-Now .text-style-1 {
+    color: #6f6c90;
+    margin-top: 30px;
+}
+
+.You-do-not-have-an-account-Join-Now .text-style-2 {
+    color: #2222ff;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    /* Flex property set to 1 to make it take up equal space */
+}
+
+.form {
+    flex: 1;
+    /* Flex property set to 1 to make it take up equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

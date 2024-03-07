@@ -1,0 +1,130 @@
+.container-div {
+    background-color: #ffd482;
+    padding: 80px;
+    /* Top padding is 20px, other sides are 20px */
+    border-radius: 26px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.form1 {
+    display: flex;
+    margin-right: 50px;
+
+}
+
+.forms {
+    max-width: 700px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 80px;
+}
+
+
+.main-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group1 {
+    margin-right: 50px;
+}
+
+.form-group1,
+.form-group2 {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    height: 56px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 322px;
+    height: 56px;
+    flex-grow: 0;
+    margin: 6px 0 0;
+    border-radius: 9px;
+    border: solid 0.6px #cecece;
+    background-color: #fff;
+}
+
+textarea {
+    height: 232px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Align vertically in the center */
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    /* Align the title text to center */
+}
+
+.forms {
+    justify-content: center;
+    /* Align the forms horizontally in the center */
+    align-items: center;
+    /* Align the forms vertically in the center */
+}
+
+.submit-btn {
+    width: 176px;
+    height: 47.8px;
+    margin: 54px 0 0 495px;
+    padding: 5.1px 30px 5.9px 37px;
+    border-radius: 40px;
+    background-color: #e47500;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e47500 !important;
+    }
+}
