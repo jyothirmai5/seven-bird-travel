@@ -1,13 +1,11 @@
 .container {
-    background-color: #2222ff;
     display: flex;
-    background-image: url('../../../assets/background.png');
-    /* Add margin property here if needed */
 }
 
 .image {
-    flex: 1;
-    width: 60%;
+flex: 1;
+height: 100%;
+width: 100%;
 }
 
 .form {
