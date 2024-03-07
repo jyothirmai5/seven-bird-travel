@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    padding: 30px;
 }
 
 .image {
@@ -16,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px
 }
 
 form {

@@ -3,7 +3,7 @@
 @import "@ng-select/ng-select/themes/material.theme.css";
 
 body {
-    background-color: #faf8ed;
+    background-color: #faf8ed !important;
     margin: 0;
     overflow: auto;
     padding: 24px 128px;
