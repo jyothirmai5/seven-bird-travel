@@ -3,9 +3,10 @@
 }
 
 .image {
-flex: 1;
-height: 100%;
-width: 100%;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .form {
@@ -50,7 +51,6 @@ form {
     display: block;
     text-align: left;
     margin-bottom: 30px;
-    font-style: italic;
     color: #888;
 }
 
@@ -66,13 +66,11 @@ input[type="password"] {
 button {
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid #515151;
-    /* Added border style */
     cursor: pointer;
     color: #ffffff;
     background-color: #f66f4d;
     width: 375px;
-    /* Rounded to 375px */
+    border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

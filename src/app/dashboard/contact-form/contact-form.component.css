@@ -112,7 +112,7 @@ button:hover {
     /* Align the forms vertically in the center */
 }
 
-.Rectangle-2 {
+.submit-btn {
     width: 176px;
     height: 47.8px;
     margin: 54px 0 0 495px;
@@ -123,4 +123,8 @@ button:hover {
     color: white;
     font-size: 16px;
     cursor: pointer;
+
+    &:hover {
+        background-color: #e47500 !important;
+    }
 }
