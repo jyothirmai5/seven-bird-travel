@@ -1,73 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f2f2f2;
-    position: relative;
+.container {
+    background-color: #2222ff;
+    display: flex;
+    background-image: url('../../../assets/background.png');
+    /* Add margin property here if needed */
 }
 
- .container {
-display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
- }
-
-
- .left{
-flex: 1;
-width: 374.8px;
- }
-
-.form h2 {
-    text-align: left;
-    font-weight: bolder;
-    /* Align the form title text to the left */
-    margin-bottom: 30px;
-    /* Add some space below the title */
+.image {
+    flex: 1;
+    width: 60%;
 }
-
-.label {
-    display: inline-block;
-    width: 374.8px;
-     /* Adjust the width as needed */
-    text-align: left;
-    font-weight: bold;
-}
-
-.form input[type="text"],
-.form input[type="password"],
-.form button {
-    width: 100%;
-    /* Make the input fields and button full-width */
-    box-sizing: border-box;
-    /* Include padding and border in the width */
-    margin-bottom: 15px;
-    /* Add some space between input fields and button */
-}
-
-.span {
-    display: block;
-    /* Make the span element a block-level element */
-    text-align: left;
-    /* Align the text within the span to the left */
-    margin-bottom: 30px;
-    /* Add some space below the span */
-    font-style: italic;
-    /* Make the text italic */
-    color: #888;
-    /* Change the color of the text */
-}
-
 
 .form {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
     height: 100%;
     background-color: #fff;
     display: flex;
@@ -77,8 +20,40 @@ width: 374.8px;
 }
 
 form {
-width: 374.8px;
-text-align: center;
+    width: 375px;
+    /* Rounded to 375px */
+    text-align: center;
+}
+
+.form h2 {
+    text-align: left;
+    font-weight: bold;
+    /* Changed from bolder */
+    margin-bottom: 30px;
+}
+
+.label {
+    display: inline-block;
+    width: 375px;
+    /* Adjusted width */
+    text-align: left;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.span {
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #888;
 }
 
 input[type="text"],
@@ -93,12 +68,13 @@ input[type="password"] {
 button {
     padding: 10px 20px;
     border-radius: 5px;
-    border: #515151;
+    border: 1px solid #515151;
+    /* Added border style */
     cursor: pointer;
-    border-radius: 8.3px;
     color: #ffffff;
     background-color: #f66f4d;
-    width: 374.8px;
+    width: 375px;
+    /* Rounded to 375px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -108,7 +84,8 @@ button {
 }
 
 .social-buttons {
-    width: 374.8px;
+    width: 375px;
+    /* Rounded to 375px */
     height: 182.5px;
     flex-grow: 0;
     display: flex;
@@ -117,14 +94,8 @@ button {
     align-items: stretch;
     padding: 0;
     text-align: center;
-    
 }
-.icon {
-    width: 20px;
-    /* Adjust this value to make the icons smaller */
-    height: 20px;
-    /* Adjust this value to make the icons smaller */
-}
+
 .social-buttons button {
     margin: 5px;
     padding: 10px 20px;
@@ -134,29 +105,21 @@ button {
     background-color: #ffffff;
     color: #000000;
     display: inline-block;
-        /* Display buttons in a line */
-        vertical-align: middle;
-        /* Align buttons vertically in the middle */
-        margin: 10px;
-        /* Add some margin around the buttons */
+    vertical-align: middle;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 8.3px;
-    }
-
+}
 
 .icon {
     width: 20px;
-    /* Adjust this value to make the icons smaller */
     height: 20px;
-    /* Adjust this value to make the icons smaller */
     margin-right: 5px;
-    /* Add right margin from the text */
 }
 
 .You-do-not-have-an-account-Join-Now {
     font-size: 15.6px;
     font-weight: normal;
-    font-stretch: normal;
     font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
@@ -165,6 +128,7 @@ button {
     margin-top: 30px;
 }
 
+/* Adjusted class names */
 .You-do-not-have-an-account-Join-Now .text-style-1 {
     color: #6f6c90;
     margin-top: 30px;
@@ -173,4 +137,22 @@ button {
 .You-do-not-have-an-account-Join-Now .text-style-2 {
     color: #2222ff;
     margin-top: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    /* Flex property set to 1 to make it take up equal space */
+}
+
+.form {
+    flex: 1;
+    /* Flex property set to 1 to make it take up equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
