@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.css */
+@import "@ng-select/ng-select/themes/material.theme.css";
+
 body {
     background-color: #faf8ed;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     padding: 24px 128px;
     font-family: Inter;
 }
@@ -26,4 +29,23 @@ body {
 .flex-between {
     display: flex;
     justify-content: space-between;
+}
+
+.mapboxgl-ctrl-geocoder,
+.mapboxgl-ctrl-geocoder .suggestions {
+    box-shadow: none !important;
+}
+
+.ng-select {
+    width: fit-content !important;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+    background-color: #f66f4d !important;
+    border-radius: 24px !important;
+    padding: 10px 15px !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {
+    color: #f66f4d !important;
 }

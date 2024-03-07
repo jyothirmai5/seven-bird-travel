@@ -1,1 +1,11 @@
-<p>popular-destinations works!</p>
+<div class="content">
+    <p class="title">Find Popular Destination</p>
+    <div class="card-list">
+        <div class="each-card" *ngFor="let city of popularCities">
+            <img class="card-image" [src]="city.image">
+            <p class="card-title">{{city.name}}, {{city.country}}</p>
+            <p class="card-subtitle">The Captital of {{city.country}}</p>
+            <button class="search-btn" (click)="redirectToMap(city.name)">Search Now</button>
+        </div>
+    </div>
+</div>

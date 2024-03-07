@@ -1,0 +1,63 @@
+.search-text {
+  margin: 0 933px 40px 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.28;
+  text-align: left;
+  color: #121212;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  flex-grow: 0;
+  border: none;
+  margin: 0 0 44px;
+  object-fit: contain;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #757575;
+}
+
+.card-btn {
+  width: fit-content;
+  flex-grow: 0;
+  padding: 11px 16px 12px 20px;
+  border-radius: 46px;
+  background-color: #e47500;
+  font-size: 14px;
+  border: none;
+
+  &:active {
+    background-color: #e47500 !important;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,1 +1,36 @@
-<p>search-results works!</p>
+<div>
+    <div class="flex-container">
+        <ng-select [multiple]="true" [(ngModel)]="selectedCategories" (ngModelChange)="onSelectedCategoriesChange()">
+            <ng-option *ngFor="let category of categories" [value]="category.canonical_id">{{category.name}}</ng-option>
+        </ng-select>
+    </div>
+    <p class="search-text">Search Results</p>
+    <div>
+        <div *ngFor="let place of places">
+            <div class="card" *ngIf="place.properties.metadata.website && place.properties.metadata.phone">
+                <div class="row no-gutters">
+                    <!-- Left-side image column -->
+                    <div class="col-md-4">
+                        <img src="../../../../assets/card-image.png" class="card-img" alt="Image Alt Text">
+                    </div>
+                    <!-- Right-side content column -->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <span class="card-title">
+                                {{ place.properties.name }}
+                            </span>
+                            <span class="card-subtitle">
+                                {{ place.properties.full_address }}
+                            </span>
+                            <span class="card-subtitle">
+                                Phone: {{ place.properties.metadata.phone }}
+                            </span>
+                            <button class="btn btn-primary card-btn">
+                                <a [href]="place.properties.metadata.website" target="_blank">More details</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

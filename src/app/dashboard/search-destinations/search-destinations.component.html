@@ -1,1 +1,31 @@
-<p>search-destinations works!</p>
+<div class="home-container">
+    <div class="flex-between">
+        <div class="content">
+            <p class="main-heading">
+                Discover the Best Lovely Places
+            </p>
+            <p class="subtitle">
+                Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+                from
+                us.
+            </p>
+        </div>
+        <img class="image" src="../../../assets/Image.png">
+    </div>
+    <div class="search-box">
+        <div>
+            <label for="exampleInput" class="form-label">Where</label>
+            <div id="geocoder"></div>
+        </div>
+        <div>
+            <label for="exampleDate" class="form-label">Select Date</label>
+            <div class="input-group">
+                <input type="date" [(ngModel)]="selectedDate" class="form-control custom-input" id="exampleDate"
+                    placeholder="YYYY-MM-DD" [min]="minDate">
+            </div>
+        </div>
+        <div class="search-icon" (click)="onSearch()">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</div>
