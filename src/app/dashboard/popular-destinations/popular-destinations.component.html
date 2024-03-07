@@ -1,11 +1,11 @@
 <div class="content">
     <p class="title">Find Popular Destination</p>
     <div class="card-list">
-        <div class="each-card" *ngFor="let i of divArray">
-            <img class="card-image" src="../../../assets/card-image.png">
-            <p class="card-title">Ottawa, Canada</p>
-            <p class="card-subtitle">The Captital of Canada</p>
-            <button class="search-btn">Search Now</button>
+        <div class="each-card" *ngFor="let city of popularCities">
+            <img class="card-image" [src]="city.image">
+            <p class="card-title">{{city.name}}, {{city.country}}</p>
+            <p class="card-subtitle">The Captital of {{city.country}}</p>
+            <button class="search-btn" (click)="redirectToMap(city.name)">Search Now</button>
         </div>
     </div>
 </div>
