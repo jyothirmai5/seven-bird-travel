@@ -29,9 +29,15 @@ export class MapboxService {
         return this.http.get(url);
     }
 
-    getPOIByCategory(category_array: Array<string>): Observable<any> {
+    getPOIByCategory(category_array: Array<string>, bbox: string, proximity_array: string): Observable<any> {
         const params = category_array.join(',');
-        const url = `https://api.mapbox.com/search/searchbox/v1/category/${params}?access_token=${this.accessToken}`;
+        const url = `https://api.mapbox.com/search/searchbox/v1/category/${params}?access_token=${this.accessToken}&limit=25&bbox=${bbox}&proximity=${proximity_array}`;
         return this.http.get(url);
+    }
+
+    getCountries(city: string): Observable<any> {
+        const endpoint = `https://api.mapbox.com/geocoding/v5/mapbox.places/${city}.json?access_token=${this.accessToken}&types=place`;
+
+        return this.http.get<any>(endpoint);
     }
 }

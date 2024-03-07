@@ -1,4 +1,4 @@
-.content{
+.content {
     margin: 92px 0 46px;
 }
 
@@ -18,7 +18,7 @@
     margin: 35px 0 0;
     padding: 0;
     overflow: auto;
-  }
+}
 
 .each-card {
     width: 386px;
@@ -38,6 +38,7 @@
     margin: 0 0 24px;
     border-radius: 16px;
     background-color: #eff0f7;
+    object-fit: cover;
 }
 
 .card-title {

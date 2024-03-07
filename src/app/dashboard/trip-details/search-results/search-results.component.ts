@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MapboxService } from '../../map.service';
-import { debounceTime, distinctUntilChanged, forkJoin, switchMap } from 'rxjs';
+import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-search-results',
@@ -10,36 +10,35 @@ import { debounceTime, distinctUntilChanged, forkJoin, switchMap } from 'rxjs';
 export class SearchResultsComponent implements OnInit {
   constructor(private mapService: MapboxService) { }
   categories = [];
-  selectedCategories = [];
+  selectedCategories = ['restaurant'];
   places: any[] = [];
+  selectedLocation?: any;
+
   ngOnInit(): void {
+    this.selectedLocation = this.mapService.selectedLocation;
     this.mapService.getAllCategories().subscribe((result) => {
       this.categories = result.listItems;
-      console.log('result from categories', result);
     });
-
+    this.onSelectedCategoriesChange();
   }
 
   onSelectedCategoriesChange(): void {
-    // Use RxJS operators to handle changes and debounce the API calls
-    this.mapService
-      .getPOIByCategory(this.selectedCategories)
-      .pipe(
-        debounceTime(300), // Adjust the debounce time as needed
-        distinctUntilChanged(),
-        switchMap(() => this.mapService.getPOIByCategory(this.selectedCategories))
-      )
-      .subscribe(response => {
-        // Handle the API response here
-        console.log('get POI', response);
-        response.features.map((feature: any) => {
-          if (feature.geometry.coordinates) {
-            const latitude = feature.geometry.coordinates[1];
-            const longitude = feature.geometry.coordinates[0];
-            const category = feature.properties.poi_category_ids[0];
-
-          }
-        })
-      });
+    if (this.selectedCategories.length > 0) {
+      // Use RxJS operators to handle changes and debounce the API calls
+      const proximity = this.selectedLocation.geometry.coordinates.join(',');
+      this.mapService
+        .getPOIByCategory(this.selectedCategories, this.selectedLocation.bbox, proximity)
+        // .pipe(
+        //   debounceTime(300), // Adjust the debounce time as needed
+        //   distinctUntilChanged(),
+        //   switchMap(() => this.mapService.getPOIByCategory(this.selectedCategories, this.selectedLocation.bbox, proximity))
+        // )
+        .subscribe(response => {
+          // Handle the API response here
+          this.places = response.features;
+        });
+    } else {
+      this.places = [];
+    }
   }
 }
