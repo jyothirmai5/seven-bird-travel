@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { GoogleAuthProvider } from 'firebase/auth'
+import { FacebookAuthProvider, GoogleAuthProvider, OAuthProvider, TwitterAuthProvider } from 'firebase/auth'
 @Injectable({
     providedIn: 'root'
 })
@@ -14,6 +14,14 @@ export class AuthService {
 
     signInWithGoogle() {
         return this.afs.signInWithPopup(new GoogleAuthProvider())
+    }
+
+    signInWithFacebook() {
+        return this.afs.signInWithPopup(new FacebookAuthProvider())
+    }
+
+    signInWithTwitter() {
+        return this.afs.signInWithPopup(new TwitterAuthProvider())
     }
 
     registerWithEmailAndPassword(user: { email: string, password: string }) {
