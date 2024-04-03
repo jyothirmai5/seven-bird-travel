@@ -22,6 +22,9 @@
                 </li>
             </ul>
         </div>
-        <button class="btn my-2 my-sm-0 login-btn" routerLink="/auth/login" type="button">Login</button>
+        <button *ngIf="!authService.isLoggedIn" class="btn my-2 my-sm-0 login-btn" routerLink="/auth/login"
+            type="button">Login</button>
+        <button *ngIf="authService.isLoggedIn" class="btn my-2 my-sm-0 login-btn" (click)="logout()"
+            type="button">Logout</button>
     </nav>
 </div>

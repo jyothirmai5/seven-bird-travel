@@ -1,5 +1,5 @@
 <div>
-    <div class="flex-container">
+    <div class="flex-container" *ngIf="categories">
         <ng-select [multiple]="true" [(ngModel)]="selectedCategories" (ngModelChange)="onSelectedCategoriesChange()">
             <ng-option *ngFor="let category of categories" [value]="category.canonical_id">{{category.name}}</ng-option>
         </ng-select>

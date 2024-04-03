@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MapboxService } from '../../map.service';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
-
+interface Category {
+  canonical_id: string;
+  icon: string;
+  name: string;
+  uuid: string;
+  version: string
+}
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
@@ -9,7 +15,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 })
 export class SearchResultsComponent implements OnInit {
   constructor(private mapService: MapboxService) { }
-  categories = [];
+  categories: Array<Category> = [];
   selectedCategories = ['restaurant'];
   places: any[] = [];
   selectedLocation?: any;
@@ -28,11 +34,11 @@ export class SearchResultsComponent implements OnInit {
       const proximity = this.selectedLocation.geometry.coordinates.join(',');
       this.mapService
         .getPOIByCategory(this.selectedCategories, this.selectedLocation.bbox, proximity)
-        // .pipe(
-        //   debounceTime(300), // Adjust the debounce time as needed
-        //   distinctUntilChanged(),
-        //   switchMap(() => this.mapService.getPOIByCategory(this.selectedCategories, this.selectedLocation.bbox, proximity))
-        // )
+        .pipe(
+          debounceTime(300), // Adjust the debounce time as needed
+          distinctUntilChanged(),
+          switchMap(() => this.mapService.getPOIByCategory(this.selectedCategories, this.selectedLocation.bbox, proximity))
+        )
         .subscribe(response => {
           // Handle the API response here
           this.places = response.features;
