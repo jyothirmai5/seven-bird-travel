@@ -39,6 +39,15 @@ export class RegisterComponent {
       })
   }
 
+  onLoginWithFacebook() {
+    this.authService.signInWithFacebook().then((res) => {
+      this.router.navigate(['dashboard/home']);
+    })
+      .catch((err: any) => {
+        console.log('error while facebook login', err);
+      })
+  }
+
   navigateToLogin() {
     this.router.navigate(['auth/login']);
   }

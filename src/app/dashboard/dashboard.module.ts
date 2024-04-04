@@ -14,7 +14,7 @@ import { MapComponent } from './trip-details/map/map.component';
 import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { SearchResultsComponent } from './trip-details/search-results/search-results.component';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     RouterModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class DashboardModule { }

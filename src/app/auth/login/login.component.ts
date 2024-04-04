@@ -60,13 +60,4 @@ export class LoginComponent {
         console.log('error while facebook login', err);
       })
   }
-
-  onLoginWithTwitter() {
-    this.authService.signInWithTwitter().then((res) => {
-      this.router.navigate(['dashboard/home']);
-    })
-      .catch((err: any) => {
-        console.log('error while facebook login', err);
-      })
-  }
 }

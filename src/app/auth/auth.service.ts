@@ -20,10 +20,6 @@ export class AuthService {
         return this.afs.signInWithPopup(new FacebookAuthProvider())
     }
 
-    signInWithTwitter() {
-        return this.afs.signInWithPopup(new TwitterAuthProvider())
-    }
-
     registerWithEmailAndPassword(user: { email: string, password: string }) {
         return this.afs.createUserWithEmailAndPassword(user.email, user.password);
     }
