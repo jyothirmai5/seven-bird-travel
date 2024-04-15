@@ -27,7 +27,6 @@ export class ContactFormComponent {
     this.router.navigate(['dashboard/home']);
   }
 
-
   addContactForm() {
     // Add data to Firebase
     console.log(this.contactFormGroup.valid, this.contactFormGroup.value);
