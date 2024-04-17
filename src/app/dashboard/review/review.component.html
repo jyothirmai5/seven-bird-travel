@@ -1,1 +1,25 @@
-<p>review works!</p>
+<h1>Share Your Experience</h1>
+<p>We love to hear about your journey. Your feedback helps us improve and assists fellow travelers in choosing their
+    perfect trip. Please leave a review and share your memories.</p>
+
+<form id="reviewForm">
+    <label for="message">Your Review:</label>
+    <textarea id="message" name="message" placeholder="Type your review here..." required></textarea>
+
+    <label for="imageCaption">Image Caption:</label>
+    <input type="text" id="imageCaption" name="imageCaption" placeholder="Upload your image" required>
+
+    <label for="imageUpload">Upload Image:</label>
+    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+
+    <label>Rating:</label>
+    <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5"><label for="5-stars">&#9733;</label>
+        <input type="radio" id="4-stars" name="rating" value="4"><label for="4-stars">&#9733;</label>
+        <input type="radio" id="3-stars" name="rating" value="3"><label for="3-stars">&#9733;</label>
+        <input type="radio" id="2-stars" name="rating" value="2"><label for="2-stars">&#9733;</label>
+        <input type="radio" id="1-star" name="rating" value="1"><label for="1-star">&#9733;</label>
+    </div>
+
+    <button type="submit">Submit Review</button>
+</form>

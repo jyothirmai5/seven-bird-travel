@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px;
+    /* Added padding to the body for extra space on the sides */
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensures the body takes at least the full height of the viewport */
+}
+
+.review-container {
+    background: white;
+    padding: 20px 80px;
+    /* Increased horizontal padding for a narrower form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    /* You can reduce this value to make the form even narrower */
+    margin: auto;
+    /* Centers the review container */
+}
+
+/* ... rest of the CSS remains the same ... */
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label[for="5-stars"],
+label[for="4-stars"],
+label[for="3-stars"],
+label[for="2-stars"],
+label[for="1-star"] {
+    font-size: 25px;
+    color: grey;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+input[type="radio"]:checked+label {
+    color: gold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
