@@ -1,0 +1,16 @@
+<div class="review-container">
+    <div *ngFor="let review of reviews" class="card">
+        <div class="close-icon" (click)="deleteReview(review)">X</div>
+        <div (click)="selectReview(review)" class="card-data">
+            <div>
+                <h2 class="review-message">{{ review.reviewMessage }}</h2>
+                <h4 class="caption">{{ review.imageCaption }}</h4>
+            </div>
+            <div class="image-container">
+                <div *ngFor="let eachImage of review.imageUrls">
+                    <img [src]="eachImage" alt="Image" style="width: 200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

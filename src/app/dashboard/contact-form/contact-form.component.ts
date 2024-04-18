@@ -29,8 +29,6 @@ export class ContactFormComponent {
 
   addContactForm() {
     // Add data to Firebase
-    console.log(this.contactFormGroup.valid, this.contactFormGroup.value);
-
     if (this.contactFormGroup.valid) {
       this.db.list('contactForm').push(this.contactFormGroup.value);
       this.contactFormGroup.reset();

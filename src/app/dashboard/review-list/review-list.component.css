@@ -1,0 +1,52 @@
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+
+.card-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-icon:hover {
+  color: darkred;
+}
+
+.review-message {
+  margin-bottom: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 14px;
+}

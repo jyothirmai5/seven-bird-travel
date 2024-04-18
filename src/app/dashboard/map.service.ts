@@ -10,7 +10,7 @@ export class MapboxService {
     private accessToken = '';
     public selectedLocation = undefined;
     public selectedCategories = new BehaviorSubject<Array<string>>([]);
-
+    
     private apiUrl = 'https://api.mapbox.com/search/searchbox/v1';
 
     constructor(private http: HttpClient) { }

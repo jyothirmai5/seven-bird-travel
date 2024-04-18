@@ -49,12 +49,6 @@ input[type="file"] {
     border: 1px solid #ccc;
 }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
 .star-rating {
     display: flex;
     justify-content: flex-start;
@@ -64,19 +58,23 @@ input[type="radio"] {
     display: none;
 }
 
-label[for="5-stars"],
-label[for="4-stars"],
-label[for="3-stars"],
-label[for="2-stars"],
-label[for="1-star"] {
+label {
     font-size: 25px;
     color: grey;
     cursor: pointer;
     transition: color 0.2s;
 }
 
-input[type="radio"]:checked+label {
+.rating input[type="radio"]:checked ~ label {
     color: gold;
+}
+
+.rating input[type="radio"]:checked ~ label ~ input[type="radio"] + label {
+    color: gold;
+}
+
+.rating input[type="radio"]:checked + label ~ label {
+    color: grey;
 }
 
 button {
@@ -92,3 +90,18 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .image-item {
+    flex-basis: calc(33.33% - 10px);
+  }
+  
+  .image-item img {
+    width: 100px;
+    border-radius: 8px;
+  }

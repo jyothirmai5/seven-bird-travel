@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from '../environment';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
 @NgModule({
     imports: [
@@ -25,6 +26,7 @@ import { environment } from '../environment';
         ReactiveFormsModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFireAuthModule,
+        AngularFireStorageModule,
     ],
     declarations: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],

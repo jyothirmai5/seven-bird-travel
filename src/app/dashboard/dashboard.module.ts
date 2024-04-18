@@ -15,6 +15,8 @@ import { TripDetailsComponent } from './trip-details/trip-details.component';
 import { SearchResultsComponent } from './trip-details/search-results/search-results.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReviewComponent } from './review/review.component';
+import { ReviewListComponent } from './review-list/review-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PopularDestinationsComponent,
     NewsletterComponent,
     ContactFormComponent,
+    ReviewComponent,
+    ReviewListComponent,
     AboutUsComponent,
     TripDetailsComponent,
     SearchResultsComponent,
